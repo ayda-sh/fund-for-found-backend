@@ -1,6 +1,6 @@
 export default ({ env }) => ({
   auth: {
-    secret: env('ADMIN_JWT_SECRET'),
+    secret: 'f1357471cb165226653dae3e1ae4d3723645abe1471c9a124b9f874c1aa91d09',
   },
   apiToken: {
     salt: 'wWXhTF3XjG5lc3GK9NNNqg==',
