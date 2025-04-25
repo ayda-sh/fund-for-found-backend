@@ -5,9 +5,10 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000'], 
+      origin: ['https://fund-for-found-seven.vercel.app', 'http://localhost:3000'], 
       methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-      allowedHeaders: ['Content-Type', 'Authorization'], 
+      allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'Accept'], 
+      exposeHeaders: ['Content-Length'],
       credentials: true,
     },
   },
