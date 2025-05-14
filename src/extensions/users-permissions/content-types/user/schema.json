@@ -71,23 +71,17 @@
       "target": "api::subcategory.subcategory",
       "mappedBy": "user"
     },
-    "tags": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag",
-      "mappedBy": "user"
-    },
     "categories": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category",
       "mappedBy": "user"
     },
-    "brand_names": {
+    "user": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::brand-name.brand-name",
-      "mappedBy": "user"
+      "target": "api::brand.brand",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
