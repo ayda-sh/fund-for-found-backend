@@ -65,18 +65,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "subcategories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::subcategory.subcategory",
-      "mappedBy": "user"
-    },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "user"
-    },
     "user": {
       "type": "relation",
       "relation": "oneToMany",
